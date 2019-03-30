@@ -13,6 +13,7 @@ setup(
         long_description_content_type='text/markdown',
         url='https://github.com/saketh-linux/pgbackup',
         packages=find_packages('src'),
+        python_requires = ('>=3.6'),
         package_dir={'':'src'},
         entry_points = {
             'console_scripts': [ 'pgbackup = pgbackup.cli:main' ]
